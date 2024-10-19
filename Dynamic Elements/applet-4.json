@@ -1,0 +1,40 @@
+[
+    {
+      "student_id": 1,
+      "student_name": "Kenneth Gamolo",
+      "student_program": "BS-Computer Science",
+      "student_enrolled_date": "2023-01-15"
+    },
+    {
+      "student_id": 2,
+      "student_name": "Delo Galladora",
+      "student_program": "BS-Computer Engineering",
+      "student_enrolled_date": "2023-02-20"
+    },
+    {
+      "student_id": 3,
+      "student_name": "Reyjourn Bicar",
+      "student_program": "BS - Information Technology",
+      "student_enrolled_date": "2023-03-10"
+    },
+    {
+     "student_id": 3,
+     "student_name": "Kris Bicar",
+     "student_program": "BS - Information Technology",
+     "student_enrolled_date": "2023-03-10"
+    },
+    {
+     "student_id": 3,
+     "student_name": "Kevin Garban",
+     "student_program": "BS - Information Technology",
+     "student_enrolled_date": "2023-03-10"
+    },
+    {
+     "student_id": 3,
+     "student_name": "Edcil Ganiay",
+     "student_program": "BS - Information Technology",
+     "student_enrolled_date": "2023-03-10"
+     }
+
+  ]
+  
