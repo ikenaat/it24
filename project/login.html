@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your go-to website for the latest movies, reviews, and news">
+  <title>MovieHub - Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .login-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .login-form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      text-align: center;
+    }
+
+    .login-form h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #f39c12;
+      color: white;
+      border: none;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-form button:hover {
+      background-color: #e67e22;
+    }
+
+    .login-form p {
+      margin-top: 15px;
+      color: #555;
+    }
+
+    .login-form p a {
+      color: #f39c12;
+      text-decoration: none;
+    }
+
+    .login-form p a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    // JavaScript function to handle login form submission and redirection
+    function handleLogin(event) {
+      event.preventDefault();  // Prevents the default form submission behavior
+
+      // Simulating successful login by redirecting to the homepage
+      // You can replace this with actual login logic (e.g., server-side validation)
+      
+      // Redirect to homepage.html after login
+      window.location.href = "homepage.html"; 
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Login Section -->
+  <div class="login-container">
+    <div class="login-form">
+      <h2>Login to MovieHub</h2>
+      <!-- Login Form -->
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button><a href="homepage.html" id="homeLink"></a>
+      </form>
+      <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

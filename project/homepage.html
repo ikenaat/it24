@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anime Hub - Your Go-To Anime Destination">
+  <title>Anime Hub - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Header & Navbar */
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .logo h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      padding-left: 20px;
+      display: inline-block;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-left: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    /* Search Bar */
+    .search-bar {
+      float: right;
+      padding: 5px 15px;
+      background-color: #444;
+      color: white;
+      border-radius: 20px;
+      margin-top: 10px;
+    }
+
+    .search-bar input {
+      border: none;
+      background-color: transparent;
+      color: white;
+      padding: 8px;
+      border-radius: 10px;
+      width: 200px;
+    }
+
+    .search-bar button {
+      background-color: #f39c12;
+      border: none;
+      color: white;
+      padding: 8px 15px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .search-bar button:hover {
+      background-color: #e67e22;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://wallpapercave.com/wp/wp3142131.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      margin-top: 70px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    /* Anime Section */
+    .anime-section {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    .anime-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* Anime Grid */
+    .anime-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .anime-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .anime-card:hover {
+      transform: scale(1.05);
+    }
+
+    .anime-card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 4px solid #f39c12;
+    }
+
+    .anime-card h3 {
+      font-size: 1.5rem;
+      color: #333;
+      padding: 15px;
+      margin: 0;
+    }
+
+    .anime-card p {
+      color: #777;
+      padding: 0 15px 15px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 50px;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <h1>Anime Hub</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#popular">Popular</a></li>
+        <li><a href="#upcoming">Upcoming</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Search Anime..." onkeyup="filterAnime()">
+      <button>Search</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to Anime Hub</h2>
+    <p>Find your favorite anime and discover new ones!</p>
+  </section>
+
+  <!-- Popular Anime Section -->
+  <section id="popular" class="anime-section">
+    <h2>Popular Anime</h2>
+    <div class="anime-grid" id="anime-grid">
+      <div class="anime-card">
+        <img src="" alt="Naruto">
+        <h3>Naruto</h3>
+        <p>Rating: 8.5/10</p>
+      </div>
+      <div class="anime-card">
+        <img src="https://animville.netlify.app/images/onepiece.jpeg" alt="One Piece">
+        <h3>One Piece</h3>
+        <p>Rating: 8.8/10</p>
+      </div>
+      <div class="anime-card">
+        <img src="https://m.media-amazon.com/images/I/81cXerMv7gL._AC_SY679_.jpg" alt="Attack on Titan">
+        <h3>Attack on Titan</h3>
+        <p>Rating: 9.0/10</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Anime Section -->
+  <section id="upcoming" class="anime-section">
+    <h2>Upcoming Anime</h2>
+    <div class="anime-grid">
+      <div class="anime-card">
+        <img src="https://m.media-amazon.com/images/I/61z1V6mG1hL._AC_SY679_.jpg" alt="Demon Slayer">
+        <h3>Demon Slayer</h3>
+        <p>Release Date: Winter 2025</p>
+      </div>
+      <div class="anime-card">
+        <img src="https://m.media-amazon.com/images/I/71KtPCexrzL._AC_SY679_.jpg" alt="Jujutsu Kaisen">
+        <h3>Jujutsu Kaisen</h3>
+        <p>Release Date: Fall 2024</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="contact">
+    <p>&copy; 2024 Anime Hub. All rights reserved.</p>
+    <p>Contact us: info@animehub.com</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Function to filter anime by title
+    function filterAnime() {
+      const query = document.getElementById('search').value.toLowerCase();
+      const animeCards = document.querySelectorAll('.anime-card');
+
+      animeCards.forEach(card => {
+        const title = card.querySelector('h3').textContent.toLowerCase();
+        
+        if (title.includes(query)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
